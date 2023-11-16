@@ -1,8 +1,7 @@
 import { FooterProps } from './Footer.props';
-import styles from './Footer.module.css';
-import cn from 'classnames';
+import {ReactElement} from "react";
 
-export const Footer = ({ ...props }: FooterProps): JSX.Element => {
+export const Footer = ({ ...props }: FooterProps): ReactElement => {
     return (
         <div {...props}>
             Footer

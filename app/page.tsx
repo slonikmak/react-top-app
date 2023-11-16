@@ -2,9 +2,10 @@
 
 import Image from 'next/image'
 import styles from './page.module.css'
-import { Button, Htag, P, Rating, Tag } from '../components';
+import { Button, Htag, P, Rating, Tag } from '@/components';
 import { useState } from 'react';
 import { withLayout } from '@/layout/Layuot';
+import {MyRating} from "@/components/MyRating/MyRating";
 
 function click() {
   console.log("Click");
@@ -25,6 +26,7 @@ function Home() {
       <Tag size='s' color='green'>Green</Tag>
       <Tag color='primary'>Green</Tag>
       <Rating isEditable rating={rating} setRating={setRating} />
+        <MyRating rating={rating} setRating={setRating} />
     </>
   )
 }
